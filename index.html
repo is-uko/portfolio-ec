@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/dist.css" />
   </head>
   <body>
-    <header class="pb-4">
+    <header class="pb-4 max-w-7xl mx-auto md:border-b-2 md:mb-12">
       <img class="w-32 mx-auto py-5" src="img/logo.svg" alt="" />
-      <nav>
-        <ul class="flex justify-evenly">
+      <nav class="md:flex md:justify-between">
+        <ul class="flex justify-evenly md:w-3/5">
           <li><a href="#">ALL</a></li>
           <li><a href="#">NEW</a></li>
           <li><a href="#">VINTAGE</a></li>
@@ -18,80 +18,105 @@
           <li><a href="#">LOOKBOOK</a></li>
           <li><a href="#">BLOG</a></li>
         </ul>
+        <ul class="hidden md:flex md:justify-evenly md:w-1/5">
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
       </nav>
     </header>
-    <main class="pb-24">
-      <img class="pb-2" src="img/item.jpg" alt="" />
-      <div class="w-11/12 mx-auto">
-        <h2 class="font-bold text-lg border-y-2 py-4 mb-4">
-          TOTALLY Short Sleeve Shirt
-        </h2>
-        <p class="pb-8">
+    <main class="pb-24 max-w-7xl mx-auto md:flex">
+      <div class="md:w-1/2">
+        <img class="pb-2 md:w-3/4 md:mx-auto" src="img/item.jpg" alt="" />
+      </div>
+      <div class="md:w-1/2">
+        <div class="w-11/12 mx-auto md:w-3/4">
+          <h2 class="font-bold text-lg border-y-2 py-4 mb-4">
+            TOTALLY Short Sleeve Shirt
+          </h2>
+          <p class="pb-8">
             テキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキスト
-        </p>
-        <p class="pb-8">\ 9,999 +tax</p>
-        <table class="text-center mb-4">
-            <th>
-                <td class="w-1/5">Color</td>
-                <td class="border-x-2 w-1/5">Size</td>
-                <td class="w-3/5"></td>
-            </th>
+          </p>
+          <p class="pb-8">\ 9,999 +tax</p>
+          <table class="w-full text-center mb-4">
+            <tr>
+              <th class="w-1/5">Color</th>
+              <th class="border-x-2 w-1/5">Size</th>
+              <th class="w-3/5"></th>
+            </tr>
             <tr class="border-y-2">
-                <td></td>
-                <td>White</td>
-                <td class="border-x-2">S</td>
-                <td>数量</td>
+              <td>White</td>
+              <td class="border-x-2">S</td>
+              <td>
+                <select class="w-4/5 text-center" name="number" id="">
+                  <option value=""></option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+              </td>
             </tr>
             <tr class="border-b-2">
-                <td></td>
-                <td>White</td>
-                <td class="border-x-2">M</td>
-                <td>数量</td>
+              <td>White</td>
+              <td class="border-x-2">M</td>
+              <td>
+                <select class="w-4/5 text-center" name="number" id="">
+                  <option value=""></option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+              </td>
             </tr>
             <tr>
-                <td></td>
-                <td>White</td>
-                <td class="border-x-2">L</td>
-                <td>数量</td>
+              <td>White</td>
+              <td class="border-x-2">L</td>
+              <td>
+                <select class="w-4/5 text-center" name="number" id="">
+                  <option value=""></option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+              </td>
             </tr>
-        </table>
-        <button class="bg-gray-600 text-white text-center w-full py-4 mb-8">ADD TO CART</button>
-        <table class="border-y-2 border-x-2 w-full text-center">
-            <th>
-                <td>Size</td>
-                <td class="border-x-2 w-3/10">Chest</td>
-                <td class="border-x-2 w-3/10">Weist</td>
-                <td class="w-3/10">Height</td>
-            </th>
-            <tr class="border-y-2">
-                <td></td>
-                <td>S</td>
-                <td class="border-x-2">99 ~ 99</td>
-                <td class="border-x-2">99 ~ 99</td>
-                <td>99 ~ 99</td>
-            </tr>
-            <tr class="border-y-2">
-                <td></td>
-                <td>M</td>
-                <td class="border-x-2">99 ~ 99</td>
-                <td class="border-x-2">99 ~ 99</td>
-                <td>99 ~ 99</td>
+          </table>
+          <button class="bg-gray-600 text-white text-center w-full py-4 mb-8">
+            ADD TO CART
+          </button>
+          <table class="w-full text-center">
+            <tr class="border-y-2" bgcolor="#ccc">
+              <th class="border-x-2">Size</th>
+              <th class="w-3/10">Chest</th>
+              <th class="border-x-2 w-3/10">Weist</th>
+              <th class="border-x-2 w-3/10">Height</th>
             </tr>
             <tr>
-                <td></td>
-                <td>L</td>
-                <td class="border-x-2">99 ~ 99</td>
-                <td class="border-x-2">99 ~ 99</td>
-                <td>99 ~ 99</td>
+              <td class="border-x-2" bgcolor="#ccc">S</td>
+              <td>99 ~ 99</td>
+              <td class="border-x-2">99 ~ 99</td>
+              <td class="border-x-2">99 ~ 99</td>
             </tr>
-        </table>
+            <tr class="border-y-2">
+              <td class="border-x-2" bgcolor="#ccc">M</td>
+              <td>99 ~ 99</td>
+              <td class="border-x-2">99 ~ 99</td>
+              <td class="border-x-2">99 ~ 99</td>
+            </tr>
+            <tr class="border-b-2">
+              <td class="border-x-2" bgcolor="#ccc">L</td>
+              <td>99 ~ 99</td>
+              <td class="border-x-2">99 ~ 99</td>
+              <td class="border-x-2">99 ~ 99</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </main>
-    <footer class="text-center text-sm">&copy; TOTALLY</footer>
+    <footer class="text-center text-sm pb-4">&copy; TOTALLY</footer>
   </body>
 </html>
